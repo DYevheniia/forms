@@ -1,0 +1,622 @@
+html {
+    font-size: 1px;
+}
+
+hr.line {
+    margin: 50rem auto;
+    border: none;
+    border-top: 1rem solid #dcdcde;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    padding-bottom: 134rem;
+}
+
+.wrapper {
+    max-width: 990rem;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 77rem 0 70rem;
+    color: #1f222c;
+    text-align: center;
+    font-size: 30rem;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+}
+
+h2 {
+    margin-bottom: 25rem;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.form-1 {
+    max-width: 330rem;
+}
+
+.form-1 input,
+.form-1 button,
+.form-1 textarea {
+    margin-bottom: 9rem;
+    padding: 11rem 14rem;
+    outline: none;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    box-sizing: border-box;
+    transition: .3s ease all;
+}
+
+.form-1 input:focus,
+.form-1 select:focus,
+.form-1 textarea:focus,
+tbody>tr>td>input:focus,
+tbody textarea:focus,
+.country:focus,
+.login-6 input:focus,
+.password-6 input:focus {
+    border: 1rem solid #3e6aff;
+    box-shadow: 0 0 2.5rem rgba(62, 106, 255, 0.55);
+}
+
+select {
+    width: 100%;
+    padding: 11rem 14rem;
+    outline: none;
+    width: 330rem;
+    border: none;
+    border: 1rem solid #ccc;
+}
+
+select>optgroup>option {
+    padding: 11rem 14rem;
+}
+
+.form-1 textarea {
+    max-width: 330rem;
+    min-width: 330rem;
+    min-height: 130rem;
+    max-height: 150rem;
+}
+
+.form-1 button,
+.form-4 button {
+    padding: 11rem 14rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 14rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3rem;
+    background-color: #12d661;
+    transition: .3s ease all;
+}
+
+.form-1 button:hover,
+.form-4 button:hover,
+.button-line div:last-child input+label:hover,
+.submit-blok input+label:hover{
+    background-color: #07be51;
+}
+
+.form-6 {
+    padding: 25rem;
+    min-width: 310rem;
+    min-height: 235rem;
+    border-radius: 5rem;
+    box-shadow: 0rem 5rem 6rem rgba(0, 0, 0, 0.15);
+    border: 1rem solid #e6e6e6;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.form-6 label {
+    display: block;
+    margin-bottom: 8rem;
+    font-size: 13rem;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+.form-6 input {
+    width: 100%;
+    margin-bottom: 13rem;
+    padding: 11rem 14rem;
+    box-sizing: border-box;
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    border: 1rem solid #cccccc;
+}
+
+.form-6 a {
+    display: inline-block;
+    font-size: 13rem;
+    color: #3e6aff;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 11rem;
+}
+.form-6 a:hover{
+    text-decoration: underline;
+}
+
+.form-2>ul>li,
+.status>li {
+    font-size: 14rem;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.radio-blok>li,
+.check-blok>li,
+.sex-blok>div,
+.remember-password-blok {
+    padding-left: 26rem;
+    margin-bottom: 12rem;
+}
+
+.submit-blok input {
+    display: none;
+}
+
+label.submit {
+    display: block;
+    border-radius: 3rem;
+    background: #12d661;
+    padding: 12rem 14rem;
+    font-size: 14rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.radio,
+.check,
+.file {
+    display: none;
+}
+
+.radio-blok>li,
+.check-blok>li,
+.status>li,
+.file-blok,
+.agree-terms-blok,
+.remember-password-blok {
+    position: relative;
+}
+
+.radio:disabled+label,
+.check:disabled+label {
+    color: #b3b3b3;
+}
+
+.radio+label::after,
+.radio+label::before,
+.check+label::after,
+.check+label::before,
+.status+label::after,
+.status+label::before,
+.agree-terms+label::after,
+.agree-terms-blok+label::before {
+    content: '';
+    position: absolute;
+}
+
+.radio+label::before {
+    top: 0;
+    left: 0;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 1rem solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.radio:checked+label::after {
+    width: 8rem;
+    height: 8rem;
+    left: 4rem;
+    top: 4rem;
+    border-radius: 50%;
+    background-color: #3e6aff;
+    box-sizing: border-box;
+}
+
+.radio:disabled+label::before,
+.check:disabled+label::before {
+    background-color: #f8f8f8;
+    border: 1rem solid #d0d0d0;
+}
+
+.check+label::before,
+.status+label::before {
+    top: -2rem;
+    left: 0;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.radio:checked+label::before,
+.check:checked+label::before {
+    border: 1rem solid #244dd7;
+}
+
+.check:checked+label::after,
+.status:checked+label::after {
+    top: 3rem;
+    left: 5rem;
+    width: 7rem;
+    height: 5rem;
+    border-left: 2rem solid #244dd7;
+    border-bottom: 2rem solid #244dd7;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+
+.date-blok {
+    padding: 5rem 20rem;
+    max-width: 473rem;
+    min-width: 473rem;
+    border-radius: 3rem;
+    background-color: #f7f7f7;
+    border: 1rem solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.date-blok h3 {
+    margin-right: 33rem;
+    min-width: 45rem;
+    max-width: 50rem;
+    color: #b3b3b3;
+    font-size: 14rem;
+    font-weight: 700;
+}
+
+.status>li {
+    padding-left: 26rem;
+    margin-right: 15rem;
+}
+
+.date-1 {
+    padding: 10rem;
+}
+
+.sex {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.sex div {
+    min-height: 70rem;
+    margin-bottom: 10rem;
+}
+
+.sex-radio {
+    display: none;
+}
+
+.sex label {
+    position: relative;
+    top: 40rem;
+    font-size: 14rem;
+    padding-left: 85rem;
+}
+
+#men+label::before,
+#women+label::before {
+    content: '';
+    position: absolute;
+    top: -25rem;
+    left: 0;
+    width: 70rem;
+    height: 70rem;
+}
+
+#men+label::before {
+    background: url(../img/men.png);
+}
+
+#men:checked+label::before {
+    background: url(../img/men-hov.png);
+}
+
+#women+label::before {
+    background: url(../img/women.png);
+}
+
+#women:checked+label::before {
+    background: url(../img/women-hov.png);
+}
+
+.check-blok-2 li {
+    margin-bottom: 25rem;
+}
+
+.check-blok-2 label {
+    position: relative;
+    padding-left: 65rem;
+    color: #1f222c;
+    font-size: 14rem;
+    font-weight: 400;
+}
+
+.chechbox-s {
+    display: none;
+}
+
+.chechbox-s+label::before,
+.chechbox-s+label::after {
+    content: '';
+    position: absolute;
+}
+
+.chechbox-s+label::before {
+    top: -3rem;
+    left: 0;
+    width: 45rem;
+    height: 25rem;
+    border-radius: 12rem;
+    background-color: #cfcfd1;
+}
+
+.chechbox-s+label::after {
+    top: -1rem;
+    left: 3rem;
+    width: 20.5rem;
+    height: 20.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.chechbox-s:checked+label::before {
+    background-color: #3e6aff;
+}
+
+.chechbox-s:checked+label::after {
+    left: 21rem;
+}
+
+.form-4 {
+    align-items: flex-start;
+    max-width: 500rem;
+    width: 100%;
+}
+
+.form-table-1 h3 {
+    font-size: 18rem;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-bottom: 25rem;
+}
+
+.form-4 tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-4 td {
+    color: #1f222c;
+    font-size: 14rem;
+    font-weight: 400;
+}
+
+.form-4>tbody>tr>td:nth-child(2) {
+    min-width: 340rem;
+}
+
+.form-4 input,
+.form-4 textarea {
+    margin-bottom: 9rem;
+    padding: 11rem 14rem;
+    outline: none;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    box-sizing: border-box;
+    transition: .3s ease all;
+}
+
+.form-4 textarea {
+    min-height: 130rem;
+    max-height: 150rem;
+    max-width: 340rem;
+    min-width: 340rem;
+}
+
+.sex-blok div {
+    position: relative;
+    margin-right: 25rem;
+}
+
+.file-blok>label {
+    display: inline-block;
+    margin-bottom: 9rem;
+    padding: 12.6rem 36.47rem;
+    font-size: 14rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3rem;
+    filter: drop-shadow(0rem 2rem 2.5rem rgba(15, 40, 126, 0.35));
+    background-color: #3e6aff;
+    transition: .3s ease all;
+}
+
+.file-blok>label:hover{
+    background-color: #2857f4;
+}
+
+.stylized-table h3 {
+    font-size: 18rem;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.stylized-table label {
+    display: inline-block;
+    margin-bottom: 6rem;
+    font-size: 13rem;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.design {
+    max-width: 680rem;
+}
+
+.design table {
+    width: 100%;
+}
+
+.design td {
+    max-width: 223rem;
+}
+
+.design input {
+    margin-bottom: 18rem;
+    padding: 11rem 14rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 3rem;
+    border: 1rem solid #ccc;
+    box-sizing: border-box;
+    transition: .3s ease all;
+}
+
+hr.design-line {
+    margin: 17rem 0 30rem 0;
+}
+
+.agree-terms-blok label {
+    font-size: 14rem;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding-left: 26rem;
+}
+
+.button-line>div {
+    max-width: 180rem;
+    width: 100%;
+}
+
+.button-line input {
+    display: none;
+}
+
+.button-line input+label {
+    display: block;
+    max-width: 180rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12rem 14rem;
+    font-size: 14rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-line div:first-child input+label {
+    border-radius: 3rem;
+    color: #6e6f77;
+    background-color: #fff;
+    border: 1rem solid #85868d;
+    transition: .5s ease all;
+}
+.button-line div:first-child input+label:hover {
+    background-color: #85868d;
+    color: #fff;
+}
+
+.button-line div:last-child input+label {
+    color: #fff;
+    border-radius: 3rem;
+    background-color: #12d661;
+    transition: .3s ease all;
+}
+
+.label-select,
+.country {
+    position: relative;
+    display: block;
+    border-radius: 3rem;
+    background-color: #fff;
+    margin-bottom: 9rem;
+}
+
+.label-select::before {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 18rem;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    border-top-color: #1f222c;
+    z-index: 0;
+}
+
+.select-5::after{
+    content: '';
+    position: absolute;
+    top: 10rem;
+    right: 34px;
+    width: 1px;
+height: 19px;
+background-color: #cccccc;
+}
+
+select,
+.country {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background: transparent;
+}
+
+.country{
+    position: relative;
+    top: 0;
+}
