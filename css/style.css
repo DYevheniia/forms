@@ -614,6 +614,7 @@ select,
     appearance: none;
     position: relative;
     background: transparent;
+    border-radius: 3px;
 }
 
 .country{
