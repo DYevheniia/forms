@@ -8,6 +8,14 @@ hr.line {
     border-top: 1rem solid #dcdcde;
 }
 
+button,
+input,
+textarea,
+.agree-terms-blok label,
+.button-line div:first-child input+label {
+    cursor: pointer;
+}
+
 .menu {
     margin: 0;
     padding: 0;
@@ -29,11 +37,16 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 main {
     padding-bottom: 134rem;
 }
 
-.wrapper {
+.wrapper,
+.fixed {
     max-width: 990rem;
     margin: 0 auto;
 }
@@ -73,6 +86,7 @@ h2 {
     border: 1rem solid #ccc;
     box-sizing: border-box;
     transition: .3s ease all;
+    cursor: pointer;
 }
 
 .form-1 input:focus,
@@ -94,6 +108,7 @@ select {
     width: 330rem;
     border: none;
     border: 1rem solid #ccc;
+    cursor: pointer;
 }
 
 select>optgroup>option {
@@ -124,8 +139,9 @@ select>optgroup>option {
 .form-1 button:hover,
 .form-4 button:hover,
 .button-line div:last-child input+label:hover,
-.submit-blok input+label:hover{
+.submit-blok input+label:hover {
     background-color: #07be51;
+    cursor: pointer;
 }
 
 .form-6 {
@@ -145,6 +161,41 @@ select>optgroup>option {
     font-size: 13rem;
     color: #b3b3b3;
     font-weight: 400;
+    cursor: pointer;
+}
+
+header>div{
+    position: relative;
+}
+
+.fixed-form{
+    position: fixed;
+    top: 190rem;
+    margin-left: 19rem;
+    z-index: 1;
+}
+
+/* .plus::before{
+    content: '+';
+    position: absolute;
+    font-size: 25rem;
+    right: 12px;
+    top: 70rem;
+    color: #949494;
+    transform: rotate(45deg);
+} */
+
+.dn{
+    display: none;
+}
+
+.plus input+label{
+    position:absolute;
+    font-size: 25rem;
+    right: 12px;
+    top: 70rem;
+    color: #949494;
+    transform: rotate(45deg);
 }
 
 .form-6 input {
@@ -166,15 +217,17 @@ select>optgroup>option {
     text-decoration: none;
     margin-bottom: 11rem;
 }
-.form-6 a:hover{
+
+.form-6 a:hover {
     text-decoration: underline;
 }
 
-.form-2>ul>li,
+div.form-2>ul>li,
 .status>li {
     font-size: 14rem;
     color: #1f222c;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .radio-blok>li,
@@ -183,6 +236,11 @@ select>optgroup>option {
 .remember-password-blok {
     padding-left: 26rem;
     margin-bottom: 12rem;
+}
+
+.sex-blok label,
+.file-blok>label {
+    cursor: pointer;
 }
 
 .submit-blok input {
@@ -288,8 +346,14 @@ label.submit {
     transform: rotate(-45deg);
 }
 
+.radio-blok label,
+.check-blok label,
+.status label {
+    cursor: pointer;
+}
+
 .date-blok {
-    padding: 5rem 20rem;
+    padding: 5rem 20rem 15rem;
     max-width: 473rem;
     min-width: 473rem;
     border-radius: 3rem;
@@ -314,6 +378,14 @@ label.submit {
 
 .date-1 {
     padding: 10rem;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    border: none;
+    border: 1px solid #cccccc;
+    border-radius: 3rem;
+    outline: none;
 }
 
 .sex {
@@ -363,6 +435,11 @@ label.submit {
     background: url(../img/women-hov.png);
 }
 
+#men:checked+label,
+#women:checked+label {
+    color: #3e6aff;
+}
+
 .check-blok-2 li {
     margin-bottom: 25rem;
 }
@@ -373,6 +450,7 @@ label.submit {
     color: #1f222c;
     font-size: 14rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .chechbox-s {
@@ -479,7 +557,7 @@ label.submit {
     transition: .3s ease all;
 }
 
-.file-blok>label:hover{
+.file-blok>label:hover {
     background-color: #2857f4;
 }
 
@@ -565,6 +643,7 @@ hr.design-line {
     border: 1rem solid #85868d;
     transition: .5s ease all;
 }
+
 .button-line div:first-child input+label:hover {
     background-color: #85868d;
     color: #fff;
@@ -597,14 +676,14 @@ hr.design-line {
     z-index: 0;
 }
 
-.select-5::after{
+.select-5::after {
     content: '';
     position: absolute;
     top: 10rem;
     right: 34px;
     width: 1px;
-height: 19px;
-background-color: #cccccc;
+    height: 19px;
+    background-color: #cccccc;
 }
 
 select,
@@ -617,7 +696,7 @@ select,
     border-radius: 3px;
 }
 
-.country{
+.country {
     position: relative;
     top: 0;
 }

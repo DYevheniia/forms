@@ -16,7 +16,7 @@
 <body>
     <header class="wrapper">
         <h1>Форми</h1>
-        <div class="flex-between">
+        <div class="flex-between fixed-form-blok">
             <div class="easy">
                 <h2>01. проста форма</h2>
                 <form class="form-1">
@@ -38,27 +38,33 @@
                     </ul>
                 </form>
             </div>
-            <div class="fixed-form">
-                <h2>06. фіксована форма</h2>
-                <form action="" class="form-6">
-                    <div class="login-6">
-                        <label for="login">Логін</label>
-                        <input type="text" id="login">
-                    </div>
-                    <div class="password-6">
-                        <label for="password">Пароль</label>
-                        <input type="password" id="password">
-                    </div>
-                    <p><a href="#">Забули пароль?</a></p>
-                    <div class="remember-password-blok">
-                        <input type="checkbox" class="check" id="remember-password">
-                        <label for="remember-password">Запам’ятати пароль</label>
-                    </div>
-                    <div class="submit-blok">
-                        <input type="submit" id="enter">
-                        <label for="enter" class="submit">Увійти</label>
-                    </div>
-                </form>
+            <div class="fixed">
+                <div class="fixed-form">
+                    <h2>06. фіксована форма</h2>
+                    <span class="plus">
+                        <input type="checkbox" id="plus" class="dn">
+                        <label for="plus">+</label>
+                    </span>
+                    <form action="" class="form-6">
+                        <div class="login-6">
+                            <label for="login">Логін</label>
+                            <input type="text" id="login">
+                        </div>
+                        <div class="password-6">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password">
+                        </div>
+                        <p><a href="#">Забули пароль?</a></p>
+                        <div class="remember-password-blok">
+                            <input type="checkbox" class="check" id="remember-password">
+                            <label for="remember-password">Запам’ятати пароль</label>
+                        </div>
+                        <div class="submit-blok">
+                            <input type="submit" id="enter">
+                            <label for="enter" class="submit">Увійти</label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
