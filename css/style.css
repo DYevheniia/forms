@@ -198,6 +198,11 @@ header>div{
     transform: rotate(45deg);
 }
 
+.plus input+label:hover{
+    transform: scale(1.2) rotate(45deg);
+    
+}
+
 .form-6 input {
     width: 100%;
     margin-bottom: 13rem;
@@ -552,13 +557,12 @@ label.submit {
     color: #fff;
     font-weight: 700;
     border-radius: 3rem;
-    filter: drop-shadow(0rem 2rem 2.5rem rgba(15, 40, 126, 0.35));
     background-color: #3e6aff;
     transition: .3s ease all;
 }
 
 .file-blok>label:hover {
-    background-color: #2857f4;
+    filter: drop-shadow(0rem 2rem 2.5rem rgba(15, 40, 126, 0.35));    background-color: #2857f4;
 }
 
 .stylized-table h3 {
@@ -585,8 +589,14 @@ label.submit {
     width: 100%;
 }
 
-.design td {
-    max-width: 223rem;
+.stylized-table td {
+    display: inline-block;
+    width: 100%;
+    max-width: 222px;
+}
+
+.stylized-table td+td{
+    margin-left: 4px;
 }
 
 .design input {
@@ -602,6 +612,10 @@ label.submit {
     border: 1rem solid #ccc;
     box-sizing: border-box;
     transition: .3s ease all;
+}
+
+#address5{
+    max-width: 450rem;
 }
 
 hr.design-line {
