@@ -196,6 +196,7 @@ header>div{
     top: 70rem;
     color: #949494;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .plus input+label:hover{
@@ -614,9 +615,7 @@ label.submit {
     transition: .3s ease all;
 }
 
-#address5{
-    max-width: 450rem;
-}
+
 
 hr.design-line {
     margin: 17rem 0 30rem 0;
@@ -713,4 +712,8 @@ select,
 .country {
     position: relative;
     top: 0;
+}
+
+#address-5{
+    width: 450rem;
 }
